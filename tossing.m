@@ -180,7 +180,7 @@ ylabel('\omega_z', 'Interpreter', 'TeX')
         S = Ma \ [F - phi; Fi];
 %         S(13:16)
 
-        if S(3) < 1e-06
+        if sign(x(6))*S(3) < 0
             keyboard
         end
         
